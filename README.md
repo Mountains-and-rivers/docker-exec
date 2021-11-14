@@ -6,6 +6,7 @@ go version 1.16.3
 docker version 19.03.9
 
 ```
+ 
 cat > /usr/lib/systemd/system/expireSession.service << EOF
 [Unit]
 Description=expireSession
@@ -19,8 +20,8 @@ Environment="SGFOOT_ENV=pro"
 Environment="SGFOOT_PATH=/data/conf"
 Restart=on-failure
 RestartSec=5s
-WorkingDirectory=/root/go/src/docker-exec
-ExecStart=nohup /root/go/src/docker-exec/expireSession >/dev/null 2>&1 &
+WorkingDirectory=/usr/local/expireSession/bin
+ExecStart=nohup /usr/local/expireSession/bin/expireSession >/dev/null 2>&1 &
 
 [Install]
 WantedBy=multi-user.target
