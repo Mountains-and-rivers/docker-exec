@@ -1,9 +1,19 @@
-# docker-exec
-docker-exec
+## docker容器中执行命令
 
-go version 1.16.3
+### 版本信息
 
-docker version 19.03.9
+| software | version |
+| -------- | ------- |
+| golang   | 1.16.3  |
+| docker   | 19.03.9 |
+
+### 编译
+
+```
+go build -o expireSession
+```
+
+### system管理golang进程
 
 ```
  
@@ -27,11 +37,11 @@ ExecStart=nohup /usr/local/expireSession/bin/expireSession >/dev/null 2>&1 &
 WantedBy=multi-user.target
 EOF
 
-
 systemctl daemon-reload # 更新配置
 systemctl start expireSession # 启动
 systemctl stop expireSession # 停止
 systemctl restart expireSession # 重启
 systemctl enable expireSession # 加入开机启动
-systemctl status expireSession # 加入开机启动
+systemctl status expireSession #查看状态
+journalctl -xe #查看日志
 ```
