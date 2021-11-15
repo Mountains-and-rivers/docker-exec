@@ -17,7 +17,10 @@ go build -o expireSession
 ### system管理golang进程
 
 ```
- 
+mkdir -p /usr/local/expireSession/bin
+cp -rf expireSession /usr/local/expireSession/bin
+chmod +x /usr/local/expireSession/bin/expireSession
+
 cat > /usr/lib/systemd/system/expireSession.service << EOF
 [Unit]
 Description=expireSession
