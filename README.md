@@ -10,6 +10,7 @@
 ### 编译
 
 ```
+cd docker-exec
 go build -o expireSession
 ```
 
