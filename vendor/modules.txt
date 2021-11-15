@@ -27,11 +27,6 @@ github.com/Microsoft/hcsshim/internal/vmcompute
 github.com/Microsoft/hcsshim/internal/wclayer
 github.com/Microsoft/hcsshim/internal/winapi
 github.com/Microsoft/hcsshim/osversion
-# github.com/ahmetalpbalkan/dexec v0.0.0-20160630173852-2538e5e2198f
-## explicit
-github.com/ahmetalpbalkan/dexec
-# github.com/ahmetalpbalkan/go-dexec v0.0.0-20160630173852-2538e5e2198f
-## explicit
 # github.com/containerd/cgroups v1.0.1
 github.com/containerd/cgroups/stats/v1
 # github.com/containerd/containerd v1.5.5
