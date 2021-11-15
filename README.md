@@ -41,11 +41,11 @@ ExecStart=nohup /usr/local/expireSession/bin/expireSession >/dev/null 2>&1 &
 WantedBy=multi-user.target
 EOF
 
-systemctl daemon-reload # 更新配置
-systemctl start expireSession # 启动
-systemctl stop expireSession # 停止
-systemctl restart expireSession # 重启
-systemctl enable expireSession # 加入开机启动
-systemctl status expireSession #查看状态
-journalctl -xe #查看日志
+systemctl daemon-reload
+systemctl start expireSession
+systemctl stop expireSession
+systemctl restart expireSession
+systemctl enable expireSession
+systemctl status expireSession
+journalctl -xe
 ```
